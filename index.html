@@ -21,33 +21,40 @@
           <li><a href="">Доставка и оплата</a></li>
           <li><a href="">О компании</a></li>
         </ul>
-        <ul class="user-navigation">
+      </nav>
+      <div class="header-block">
+        <ul class="header-user-navigation">
           <li><span class="search">Поиск</span></li>
           <li><a href="">Вход</a></li>
           <li><a href="">Пусто</a></li>
         </ul>
-      </nav>
-      <p class="">
-        <span class="">С 10 до 20, ежедневно</span>
-        <a href="tel:+78124502525">8 812 450-25-25</a>
-      </p>
+        <p class="header-telephone-block">
+          <span>С 10 до 20, ежедневно</span><br>
+          <a href="tel:+78124502525">8 812 450-25-25</a>
+        </p>
+      </div>
     </header>
+    
     <main class="container">
       <h1 class="visually-hidden">Глейси — интернет-магазин вкусного мороженого</h1>
+      
       <section class="promo-slider">
         <h2 class="visually-hidden">Промо-слайдер</h2>
         <div  class="slider-content">
           <ul>
             <li>
               <h3 class="slide-header">Крем-брюле и пломбир с малиновым джемом</h3>
+              <img src="" width="650" height="650" alt="Фото мороженого">
               <a class="slider-button" href="#">Давайте оба</a>              
             </li>
             <li>
               <h3 class="slide-header">Шоколадный пломбир и лимонный сорбет</h3>
+              <img src="" width="650" height="650" alt="Фото мороженого">
               <a class="slider-button" href="#">Давайте оба</a>              
             </li>
             <li>
               <h3 class="slide-header">Пломбир с помадкой и клубничный щербет</h3>
+              <img src="" width="650" height="650" alt="Фото мороженого">
               <a class="slider-button" href="#">Давайте оба</a>              
             </li>
           </ul>
@@ -58,6 +65,7 @@
           <span class="dot"></span>
         </div>
       </section>
+      
       <section class="banners">
         <h2 class="visually-hidden">Баннеры со спецпредложениями</h2>
         <ul class="banners-list">
@@ -73,6 +81,7 @@
           </li>
         </ul>
       </section>
+      
       <section class="bestsellers">
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="catalog-list">
@@ -102,7 +111,7 @@
           </li>
           <li class="catalog-item">
             <h3 >
-              <a href="">Сливочно-клубничное с присыпкой из белого шоколада/a>
+              <a href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </h3>
             <p class="catalog-item-image">
               <a href="">
@@ -126,6 +135,7 @@
           </li>
         </ul>
       </section>
+      
       <section class="advantges">
         <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <div class="advantages-column">
@@ -141,18 +151,23 @@
           </ul>
         </div>
       </section>
+      
       <article class="last-post">
         <span>Новое в нашем блоге</span>
         <h3 class="post-header"><a href="">10 способов сервировки фруктовых щербетов к столу</a></h3>
       </article>
+      
       <section class="subscription">
         <h2 class="visually-hidden">Подписка на вкусную рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <form method="POST" name="subscription">
+        
+        <!--Здесь будет форма подписки-->
+        <form method="GET" name="subscription">
           <input type="email" name="email" id="email" placeholder="Электронная почта">
           <input type="submit" value="Отправить">
         </form>
       </section>
+      
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <p>
@@ -169,6 +184,7 @@
         <a class="callback-button" href="">Форма обратной связи</a>
       </section>
     </main>
+    
     <footer class="main-footer">
       <div class="footer-social">
         <ul>
@@ -179,23 +195,25 @@
         </ul>
       </div>
       <div class="footer-navigation">
-        <ul>
+        <ul class="footer-navigation-col">
           <li><a href=""><b>Для поставщиков</b></a></li>
           <li><a href="">О производстве</a></li>
+        </ul>
+        <ul class="footer-navigation-col">
           <li><a href="">Наши документы</a></li>
           <li><a href="">Экологические стандарты</a></li>
         </ul>
       </div>
       <div class="footer-copyright">
         <a href="http://htmlacademy.ru"><img src="" width="100" height="50" alt="Логотип HTML Academy"></a>
-        <p>Сделано в <a href="http://htmlacademy.ry">HTML Academy</a>© 2017</p>
+        <p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a>© 2017</p>
       </div>
     </footer>
 
     <!--Форма обратной связи-->
     <section class="modal modal-callback">
       <h2>Мы обязательно вам ответим!</h2>
-      <form action="" method="POST" name="callbac">
+      <form action="" method="GET" name="callback">
         <input type="text" name="name" id="name" placeholder="Как вас зовут?">
         <input type="email" name="email" id="email" placeholder="Ваша почта для ответа?">
         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Напишите что-нибудь"></textarea>
