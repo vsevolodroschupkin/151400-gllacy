@@ -9,32 +9,51 @@
       <nav class="main-navigation">
         <a><img src="" width="154" height="64 " alt="Логотип Gllacy Shop"></a>
         <ul class="site-navigation">
-          <li><a href="">Каталог</a>
-              <ul class="dropdown-list">
-                <li><a href=""><b>Новинки</b></a></li>
-                <li><a href="">Сливочное</a></li>
-                <li><a href="">Щербеты</a></li>
-                <li><a href="">Фруктовый лед</a></li>
-                <li><a href="">Мелорин</a></li>
-              </ul>
+          <li>Каталог
+            <ul class="dropdown-list">
+              <li><a class="list-item-special" href="">Новинки</a></li>
+              <li><a href="">Сливочное</a></li>
+              <li><a href="">Щербеты</a></li>
+              <li><a href="">Фруктовый лед</a></li>
+              <li><a href="">Мелорин</a></li>
+            </ul>
           </li>
           <li><a href="">Доставка и оплата</a></li>
           <li><a href="">О компании</a></li>
         </ul>
       </nav>
       <div class="header-block">
-        <ul class="header-user-navigation">
-          <li><span class="search">Поиск</span></li>
-          <li><a href="">Вход</a></li>
-          <li><a href="">Пусто</a></li>
-        </ul>
-        <p class="header-telephone-block">
+        <span class="search">Поиск</span>
+            <!-- Форма поиска -->
+        <div class="dropdown form-search">
+          <h2 class="visually-hidden">Поиск по сайту</h2>
+          <form action="" method="POST" name="search">
+            <input type="search" name="search" id="search" placeholder="Что ищем?">
+          </form>
+      </div>
+      <div class="header-block">
+        <a href="">Вход</a>
+            <!--Форма входа  в личный кабинет-->
+        <div class="dropdown form-login">
+          <h2 class="visually-hidden">Вход в личный кабинет</h2>
+          <form action="" method="POST" name="login">
+            <input type="email" name="email" id="email" placeholder="Электронная почта">
+            <input type="password" name="password" id="password" placeholder="Пароль">
+            <input type="submit" value="Войти">
+          </form>
+          <a href="">Забыли пароль?</a>
+          <a href="">Новая регистрация</a>
+        </div>
+      </div>
+      <div class="header-block">
+        <a class="cart" href="">Пусто</a>
+      <div>
+      <div class="header-block">
           <span>С 10 до 20, ежедневно</span><br>
           <a href="tel:+78124502525">8 812 450-25-25</a>
-        </p>
       </div>
     </header>
-    
+      
     <main class="container">
       <h1 class="visually-hidden">Глейси — интернет-магазин вкусного мороженого</h1>
       
@@ -86,51 +105,35 @@
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
+            <img class="catalog-item-image" src="http://placehold.it/150x100" width="267" height="267" alt="Фото сливочного мороженого с апельсиновым джемом и цитрусовой стружкой">
+            <p class="item-price" ><span>310₽</span>/кг</p>
             <h3>
               <a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h3>
-            <p class="catalog-item-image">
-              <a href="">
-                  <img src="" width="267" height="267" alt="Фото сливочного мороженого с апельсиновым джемом и цитрусовой стружкой">
-              </a>
-            </p> 
-            <p class="item-price" ><span>310₽</span>/кг</p>
             <a class="item-button" href="">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <img class="catalog-item-image" src="http://placehold.it/150x100" width="267" height="267" alt="Фото cливочно-кофейного мороженого с кусочками шоколада">
+            <p class="item-price" ><span>380₽</span>/кг</p>
             <h3 >
               <a href="">Сливочно-кофейное с кусочками шоколада</a>
             </h3>
-            <p class="catalog-item-image">
-              <a href="">
-                  <img src="" width="267" height="267" alt="Фото cливочно-кофейного мороженого с кусочками шоколада">
-              </a>
-            </p> 
-            <p class="item-price" ><span>380₽</span>/кг</p>
             <a class="item-button" href="">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <img class="catalog-item-image" src="http://placehold.it/150x100" width="267" height="267" alt="Фото сливочно-клубничного мороженого с присыпкой из белого шоколада">
+            <p class="item-price" ><span>355₽</span>/кг</p>
             <h3 >
               <a href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </h3>
-            <p class="catalog-item-image">
-              <a href="">
-                  <img src="" width="267" height="267" alt="Фото сливочно-клубничного мороженого с присыпкой из белого шоколада">
-              </a>
-            </p> 
-            <p class="item-price" ><span>355₽</span>/кг</p>
             <a class="item-button" href="">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
+            <img class="catalog-item-image" src="http://placehold.it/150x100" width="267" height="267" alt="Фото сливочного крем-брюле с карамельной подливкой">
+            <p class="item-price" ><span>310 ₽</span>/кг</p>
             <h3 >
               <a href="">Сливочное крем-брюле с карамельной подливкой</a>
             </h3>
-            <p class="catalog-item-image">
-              <a href="">
-                  <img src="" width="267" height="267" alt="Фото сливочного крем-брюле с карамельной подливкой">
-              </a>
-            </p> 
-            <p class="item-price" ><span>310 ₽</span>/кг</p>
             <a class="item-button" href="">Быстрый просмотр</a>
           </li>
         </ul>
@@ -170,15 +173,17 @@
       
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
+        <img class="map" src="" alt="Карта">
+        <img class="pin" src="" alt="Пин на карте">
         <p>
           Адрес главного офиса<br>
           и офлайн-магазина: <br>
-          <b>ул. Большая Конюшенная <br>
-            19/8, Санкт-Петербург</b>
-        </p>
-        <p>
+          <span class="contacts-special">ул. Большая Конюшенная <br>
+            19/8, Санкт-Петербург</span>
+          </p>
+          <p>
           Для заказов по телефону: <br>
-          <b><a href="tel:+78124502525">8 812 450-25-25</a></b> <br>
+          <a href="tel:+78124502525">8 812 450-25-25</a> <br>
           (с 10 до 20 ежедневно)
         </p>
         <a class="callback-button" href="">Форма обратной связи</a>
@@ -196,7 +201,7 @@
       </div>
       <div class="footer-navigation">
         <ul class="footer-navigation-col">
-          <li><a href=""><b>Для поставщиков</b></a></li>
+          <li><a class="navigation-link-special" href="">Для поставщиков</a></li>
           <li><a href="">О производстве</a></li>
         </ul>
         <ul class="footer-navigation-col">
@@ -209,7 +214,7 @@
         <p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a>© 2017</p>
       </div>
     </footer>
-
+    
     <!--Форма обратной связи-->
     <section class="modal modal-callback">
       <h2>Мы обязательно вам ответим!</h2>
@@ -219,26 +224,6 @@
         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Напишите что-нибудь"></textarea>
       </form>
       <span class="modal-close">x</span>
-    </section>
-
-    <!--Форма входа  в личный кабинет-->
-    <section class="modal modal-login">
-      <h2 class="visually-hidden">Вход в личный кабинет</h2>
-      <form action="" method="POST" name="login">
-        <input type="email" name="email" id="email" placeholder="Электронная почта">
-        <input type="password" name="password" id="password" placeholder="Пароль">
-        <input type="submit" value="Войти">
-      </form>
-      <a href="">Забыли пароль?</a>
-      <a href="">Новая регистрация</a>
-    </section>
-
-    <!--Поиск-->
-    <section class="modal modal-search">
-      <h2 class="visually-hidden">Поиск по сайту</h2>
-      <form action="" method="POST" name="search">
-        <input type="search" name="search" id="search" placeholder="Что ищем?">
-      </form>
     </section>
 
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
