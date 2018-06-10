@@ -101,7 +101,7 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!--Фильтры-->
-        <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="POST" oninput="min.value=range.value">
           <label for"filter-dropdown">Сортировка:</label>
             <select class="filter-select" name="sorting-type" id="filter-dropdown">
               <option value="popularity" selected>По популярности</option>
@@ -110,13 +110,11 @@
               <option value="fat-content">По жирности</option>
           </select>
           <fieldset>
-            <legend>Цена:</legend><span>
-            <label class="visually-hidden" for="filter-price-min">Минимальная цена</label>
-            <input type="text" name="price-range-min" id="filter-price-min" placeholder="100"> руб. — 
-            <label class="visually-hidden" for="filter-price-max">Максимальная цена</label> 
-            <input type="text" name="price-range-max" id="filter-price-max" placeholder="500"> руб.
-            <label class="visually-hidden" for="filter-range">Диапазон цен</label>
-            <input type="range" name="price-range" value="100" min="0" max="700" step="50" id="filter-range">
+            <legend>Цена:</legend>
+            <output name="min" id="min" for="range">100</output> руб. — 
+            <output name="price-max" id="price-max">500</output> руб.
+            <label class="visually-hidden" for="range">Диапазон цен</label>
+            <input type="range" name="range" value="100" min="0" max="700" step="50" id="range">
           </fieldset> 
           <fieldset>
             <legend>Жирность:</legend>
