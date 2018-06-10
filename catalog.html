@@ -109,8 +109,15 @@
               <option value="first-expensive">Сначала дорогие</option>
               <option value="fat-content">По жирности</option>
           </select>
-          <label for="filter-range">Цена: <span class="price-range-min">100</span> руб. — <span class="price-range-max">500</span> руб.</label>
-          <input type="range" name="price-range" value="100" min="0" max="600" step="50" id="filter-range">
+          <fieldset>
+            <legend>Цена:</legend><span>
+            <label class="visually-hidden" for="filter-price-min">Минимальная цена</label>
+            <input type="text" name="price-range-min" id="filter-price-min" placeholder="100"> руб. — 
+            <label class="visually-hidden" for="filter-price-max">Максимальная цена</label> 
+            <input type="text" name="price-range-max" id="filter-price-max" placeholder="500"> руб.
+            <label class="visually-hidden" for="filter-range">Диапазон цен</label>
+            <input type="range" name="price-range" value="100" min="0" max="700" step="50" id="filter-range">
+          </fieldset> 
           <fieldset>
             <legend>Жирность:</legend>
             <ul>
@@ -261,13 +268,13 @@
             <a class="item-button" href="">Быстрый просмотр</a>
           </li>
           <ul class="pagination-list">
-            <li class="pagination-item prev"><a href="#"><span>назад</span></a></li>
+            <li class="pagination-item prev"><a href="#"><span class="visually-hidden">назад</span></a></li>
             <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
             <li class="pagination-item"><a href="#">4</a></li>                  
             <li class="pagination-item"><a href="#">5</a></li>                  
-            <li class="pagination-item next"><a href="#"><span>вперед</span></a></li>                  
+            <li class="pagination-item next"><a href="#"><span class="visually-hidden">вперед</span></a></li>                  
           </ul>
         </section>
           
@@ -292,8 +299,8 @@
         </ul>
       </div>
       <div class="footer-copyright">
-        <a href="http://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"></a>
-        <p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a>© 2017</p>
+        <a class="copyright-logo" href="http://htmlacademy.ru"><span class="visually-hidden">Логотип HTML Academy</span></a>
+        <p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a>© 2018</p>
       </div>
     </footer>
 
