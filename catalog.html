@@ -109,13 +109,8 @@
               <option value="first-expensive">Сначала дорогие</option>
               <option value="fat-content">По жирности</option>
           </select>
-          <fieldset>
-            <legend>Цена: <span class="price-range-min">100</span> руб. — <span class="price-range-max">500</span> руб.</legend>
-            <input type="range" name="range-1" value="100" min="0" max="600" step="50" id="filter-range-1">
-            <label class="visually-hidden" for="filter-range-1">Контролер диапазона 1</label>
-            <input type="range" name="range-2" value="500" min="0" max="600" step="50" id="filter-range-2">
-            <label class="visually-hidden" for="filter-range-2">Контролер диапазона 2</label>
-          </fieldset>
+          <label for="filter-range">Цена: <span class="price-range-min">100</span> руб. — <span class="price-range-max">500</span> руб.</label>
+          <input type="range" name="price-range" value="100" min="0" max="600" step="50" id="filter-range">
           <fieldset>
             <legend>Жирность:</legend>
             <ul>
@@ -280,10 +275,10 @@
     <footer class="main-footer">
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="">Твиттер</a></li>
-          <li><a class="social-button" href="">Инстаграм</a></li>
-          <li><a class="social-button" href="">Инстаграм</a></li>
-          <li><a class="social-button" href="">Вконтакте</a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
         </ul>
       </div>
       <div class="footer-navigation">
