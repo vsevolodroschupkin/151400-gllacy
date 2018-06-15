@@ -85,7 +85,6 @@ a {
 .site-navigation-list,
 .navigation-dropdown-list  {
   list-style: none;
-  padding: 0;
 }
 
 .site-navigation-link,
@@ -266,7 +265,6 @@ a {
 
 .promo-slider-list {
   list-style: none;
-  padding: 0;
 }
 
 .slide-header {
@@ -290,7 +288,6 @@ a {
 
 .banners-list {
   list-style: none;
-  padding: 0;
 }
 
 .banners-item:first-child {
@@ -338,7 +335,6 @@ a {
 /* Inner breadcrumbs */
 .breadcrumb {
   list-style: none;
-  padding: 0;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -370,7 +366,6 @@ a {
 
 .filter-fieldset {
   border: none;
-  padding: 0;
 
 }
 
@@ -418,7 +413,6 @@ a {
 .filter-fat-list,
 .filter-content-list {
   list-style: none;
-  padding: 0;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -451,7 +445,6 @@ a {
 
 .catalog-list {
   list-style: none;
-  padding: 0;
 }
 
 .catalog-item:hover {
@@ -498,7 +491,6 @@ a {
 /* Pagination */
 .pagination-list {
   list-style: none;
-  padding: 0;
 }
 
 .pagination-link {
@@ -545,7 +537,6 @@ a {
 
 .advantages-list {
   list-style: none;
-  padding: 0;
 }
 
 /* Index Last post */
@@ -635,7 +626,6 @@ background-color: #849d8f;
 
 .social-list {
   list-style: none;
-  padding: 0;
 
 }
 
@@ -645,7 +635,6 @@ background-color: #849d8f;
 
 .footer-navigation-col {
   list-style: none;
-  padding: 0;
 }
 
 
