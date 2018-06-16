@@ -61,14 +61,19 @@ a {
   color: #ffffff;
   background: linear-gradient(to bottom, #f26843, #e74a35);
   border: none;
+  box-shadow: rgba(172, 16, 0, 0.64) 0 2px 2px 0;
+  text-shadow: rgba(160, 32, 11, 0.76) 0 2px 5px;
+  
 }
 
 .button:hover {
   background: #f17d65;
+  box-shadow: rgba(172, 16, 0, 1) 0 2px 2px 0;
 }
 
 .button:active {
   background: linear-gradient(to top, #f26843, #e74a35);
+  box-shadow: inset rgba(148, 39, 24, 1) 0 2px 2px 0;
   
 }
 
@@ -98,12 +103,15 @@ a {
   background-color: #d07058;
 }
 
-.site-navigation-link:hover, 
-.site-navigation-link:active {
-  color: #333333;
-  background-color: #ededed;
-  font-weight: 700;
+.site-navigation-link:hover {
+color: #333333;
+background-color: #ededed;
+font-weight: 700;
 
+}
+
+.site-navigation-link:active {
+  box-shadow: inset rgba(105, 105, 105, 1) 0 2px 1px 0;
 }
 
 .navigation-dropdown-list {
