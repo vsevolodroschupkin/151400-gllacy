@@ -17,16 +17,24 @@ a {
 }
 
 /* Visually hidden  */
-/* .visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
   
-} */
-
-
 /* Form fields */
 
 .input-text {
@@ -82,37 +90,33 @@ a {
 .main-header {
   width: 100%;
   min-height: 113px;
-  vertical-align: center;
 }
 
 .container {
   width: 1146px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 27px;
 }
 
 .header-wrapper {
   display: flex;
-  flex-direction: row;
 }
 
 .header-block-wrapper {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
 }
 
 .block-wrapper-topline {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
 }
 
 .main-navigation {
   width: 560px;
   display: flex;
-  flex-direction: row;
   line-height: 18px;
-  background-color: #849d8f;
 }
 
 .main-header-logo {
@@ -120,6 +124,10 @@ a {
   height: 64px;
   margin-right: 23px;
 
+}
+
+.dropdown {
+  display: none;
 }
 
 .site-navigation-list,
@@ -131,7 +139,6 @@ a {
 
 .site-navigation-list {
   display: flex;
-  flex-direction: row;
 }
 
 .navigation-dropdown-list {
@@ -157,7 +164,7 @@ a {
   background-color: #d07058;
 }
 
-.site-navigation-link:hover {
+.site-navigation-link:hover:not(.site-navigation-link-current) {
 color: #333333;
 background-color: #ededed;
 font-weight: 700;
@@ -201,14 +208,27 @@ font-weight: 700;
 }
 
 .header-search-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
   color: inherit;
-  background-color: rgba(255, 255, 255, 0.2)
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+
+  
 }
 
 .header-search-link:hover {
   color: #323232;
-  background-color: #f8f7f4
+  background-color: #f8f7f4;
 }
+
+.header-search-link:hover path {
+  fill: #000000;
+}
+
 
 .header-login-link {
   color: inherit;
@@ -363,14 +383,12 @@ font-weight: 700;
 
 /* Index Banners */
 .banners {
-  background-color: #849d8f;
 }
 
 .banners-list {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   list-style: none;
 }
@@ -385,7 +403,6 @@ font-weight: 700;
 }
 
 .banners-item:first-child {
-  background-color: #849d8f;
   background-image: url("../img/raspberry-bg.jpg");
   background-position: 50% 50%;
   background-size: cover;
@@ -393,7 +410,6 @@ font-weight: 700;
 }
 
 .banners-item:last-child {
-  background-color: #849d8f;
   background-image: url("../img/chocolate-bg.jpg");
   background-position: 50% 50%;
   background-size: cover;
@@ -439,7 +455,6 @@ font-weight: 700;
   padding: 0;
   margin-bottom: 12px;
   display: flex;
-  flex-direction: row;
   list-style: none;
   font-size: 14px;
   line-height: 16px;
@@ -470,18 +485,13 @@ font-weight: 700;
 
 .filter {
   width: 855px;
-  margin-right: auto;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: flex-start; 
-  
 }
 
 .filter-wrapper {
   display: flex;
-  flex-direction: row;
 }
 
 .field-sorting-wrapper {
@@ -515,8 +525,6 @@ font-weight: 700;
 
 .filter-fat-list {
   display: flex;
-  flex-direction: row;
-
 }
 
 .filter-fat-list .filter-option {
@@ -532,7 +540,6 @@ font-weight: 700;
 .filter-content-list {
   width: 705px;
   display: flex;
-  flex-direction: row;
 }
 
 .filter-parameter-name {
@@ -614,7 +621,6 @@ font-weight: 700;
 /* Index Hits & Inner Catalog */
 .bestsellers {
   color: #ffffff;
-  background-color: #849d8f;
   margin-bottom: 35px;
 }
 
@@ -622,7 +628,6 @@ font-weight: 700;
   margin: 0;
   padding: 0; 
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
@@ -698,7 +703,6 @@ font-weight: 700;
 .pagination-wrapper {
   width: 100%;
   display: flex;
-  flex-direction: row;
 }
 
 .pagination-list {
@@ -706,8 +710,6 @@ font-weight: 700;
   padding: 0;
   margin-left: auto;
   display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
   list-style: none;
 }
 
@@ -754,7 +756,6 @@ font-weight: 700;
 
 .advantages .column-wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -787,7 +788,6 @@ font-weight: 700;
 
 .section-wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -860,8 +860,8 @@ font-weight: 700;
 }
 
 .contacts-map {
-max-width: 1200px;
-/* margin: 0 auto; */
+width: 100%;
+margin: 0 auto;
 
 }
 .contacts-block {
@@ -896,22 +896,18 @@ max-width: 1200px;
 /* Footer */
 .main-footer {
   display: flex;
-  flex-direction: row;
   align-items: center;
 
 }
 
 .footer-navigation {
   display: flex;
-  flex-direction: row;
   font-size: 13px;
   line-height: 18px;
-  background-color: #849d8f;
 }
 
 .social-list {
   display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0;
   list-style: none;
