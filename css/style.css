@@ -1,5 +1,5 @@
   body {
-  width: 100%;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -8,7 +8,6 @@
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
-  overflow: hidden;
   
 }
 
@@ -1980,9 +1979,9 @@ fill: #e9e9e9;
 }
 
 /* Modal callback */
-.modal {
+/* .modal {
   display: none;
-}
+} */
 
 .modal-callback {
   position: fixed;
