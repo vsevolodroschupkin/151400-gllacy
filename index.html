@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -16,7 +16,7 @@
         <div class="container">
           <div class="header-wrapper">
             <nav class="main-navigation">
-              <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64 " alt="Логотип Gllacy Shop"></a>
+              <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop"></a>
               <ul class="site-navigation-list">
                 <li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html"><span class="link-text-wrapper">Каталог</span></a>
                   <ul class="navigation-dropdown-list">
@@ -35,7 +35,7 @@
               <div class="block-wrapper-topline">
                 <div class="header-block header-search">
                 <a class="header-search-link" href="#"><span class="visually-hidden">Вызвать форму поиска</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path class="search-icon-path" fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
                 </a>
                 <!-- Форма поиска -->
                   <div class="dropdown form-search-block">
@@ -223,7 +223,8 @@
         
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <img class="contacts-map" src="img/map.jpg" width="1200" height="640" alt="Адрес главного офиса и офлайн-магазина — ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <iframe class="contacts-map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.309611142969!2d30.316131013715065!3d59.939154260727975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1530380683158" width="1200" height="430" allowfullscreen></iframe>
+          <img class="contacts-map" src="img/map.jpg" width="1200" height="430" alt="Адрес главного офиса и офлайн-магазина — ул. Большая Конюшенная 19/8, Санкт-Петербург">
           <div class="container">
             <div class="contacts-block">
               <p class="contacts-block-text">
@@ -284,33 +285,34 @@
           </ul>
         </div>
         <div class="footer-copyright">
-          <a class="copyright-logo" href="http://htmlacademy.ru"><span class="visually-hidden copyright-logo-text">Логотип HTML Academy</span></a>
-          <p class="copyright-text">Сделано в <a class="copyright-link" href="http://htmlacademy.ru">HTML Academy</a> © 2018</p>
+          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden copyright-logo-text">Логотип HTML Academy</span></a>
+          <p class="copyright-text">Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018</p>
         </div>
       </footer>
       
       <!--Форма обратной связи-->
-      <div class="modal-overlay">
-        <section class="modal modal-callback">
-          <h2 class="modal-callback-header">Мы обязательно вам ответим!</h2>
-          <form class="callback-form" action="https://echo.htmlacademy.ru" method="POST" name="callback">
-            <div class="input-wrapper">
-              <label class="visually-hidden" for="callback-name">Введите имя</label>
-              <input class="input-text" type="text" name="name" id="callback-name" placeholder="Как вас зовут?">
-            </div>
-            <div class="input-wrapper">
-              <label class="visually-hidden" for="callback-email">Введите электронную почту</label>
-              <input class="input-text" type="email" name="email" id="callback-email" placeholder="Ваша почта для ответа?">
-            </div>
-            <div class="input-wrapper">
-              <label class="visually-hidden" for="callback-comment">Оставьте комментарий</label>
-              <textarea class="input-text input-comment" name="comment" id="callback-comment" placeholder="Напишите что-нибудь"></textarea>
-            </div>
-            <button class="button callback-form-button" type="submit">Отправить</button>
-          </form>
-          <button class="modal-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
-        </section>
-      </div>
+      <section class="modal modal-callback">
+        <h2 class="modal-callback-header">Мы обязательно вам ответим!</h2>
+        <form class="callback-form" action="https://echo.htmlacademy.ru" method="POST" name="callback">
+          <div class="input-wrapper">
+            <label class="visually-hidden" for="callback-name">Введите имя</label>
+            <input class="input-text" type="text" name="name" id="callback-name" placeholder="Как вас зовут?">
+          </div>
+          <div class="input-wrapper">
+            <label class="visually-hidden" for="callback-email">Введите электронную почту</label>
+            <input class="input-text" type="email" name="email" id="callback-email" placeholder="Ваша почта для ответа?">
+          </div>
+          <div class="input-wrapper">
+            <label class="visually-hidden" for="callback-comment">Оставьте комментарий</label>
+            <textarea class="input-text input-comment" name="comment" id="callback-comment" placeholder="Напишите что-нибудь"></textarea>
+          </div>
+          <button class="button callback-form-button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+      </section>
+      <div class="modal-overlay"></div>
     </div>
+    <script src="js/script.min.js"></script>
+    
   </body>
 </html>
