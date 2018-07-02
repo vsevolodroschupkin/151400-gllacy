@@ -505,7 +505,7 @@ input[type="radio"].visually-hidden {
 
 }
 
-.header-cart:focus .header-cart-link {
+.header-cart-link:focus {
   background-color: rgba(248,247,244, 0.99);
   color: #323232;
   outline: none;
