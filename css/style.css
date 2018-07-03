@@ -923,32 +923,32 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-#product-1:checked ~ .site-wrapper .label-slider[for="product-1"],
-#product-2:checked ~ .site-wrapper .label-slider[for="product-2"],
-#product-3:checked ~ .site-wrapper .label-slider[for="product-3"] {
+.product-1:checked ~ .site-wrapper .label-slider[for="product-1"],
+.product-2:checked ~ .site-wrapper .label-slider[for="product-2"],
+.product-3:checked ~ .site-wrapper .label-slider[for="product-3"] {
   background-color: #ffffff;
 }
 
 /* Показываем слайды */
-#product-1:checked ~ .site-wrapper #slide1,
-#product-2:checked ~ .site-wrapper #slide2,
-#product-3:checked ~ .site-wrapper #slide3 {
+.product-1:checked ~ .site-wrapper .slide1,
+.product-2:checked ~ .site-wrapper .slide2,
+.product-3:checked ~ .site-wrapper .slide3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#product-1:checked ~ .site-wrapper {
+.product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider-img-1.png");
 }
 
-#product-2:checked ~ .site-wrapper {
+.product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slider-img-2.png");
 }
 
-#product-3:checked ~ .site-wrapper {
+.product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slider-img-3.png");
 }
