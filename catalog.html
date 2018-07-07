@@ -15,7 +15,15 @@
             <nav class="main-navigation">
               <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop"></a>
               <ul class="site-navigation-list">
-                <li class="site-navigation-item"><a class="site-navigation-link site-navigation-link-current"><span class="link-text-wrapper">Каталог</span></a></li>
+                <li class="site-navigation-item"><a class="site-navigation-link site-navigation-link-current" tabindex="0"><span class="link-text-wrapper">Каталог</span></a>
+                  <ul class="navigation-dropdown-list">
+                    <li class="dropdown-navigation-item navigation-item-special">Новинки</li>
+                    <li class="dropdown-navigation-item"><a class="dropdown-navigation-link dropdown-navigation-link-current">Сливочное</a></li>
+                    <li class="dropdown-navigation-item"><a class="dropdown-navigation-link" href="#">Щербеты</a></li>
+                    <li class="dropdown-navigation-item"><a class="dropdown-navigation-link" href="#">Фруктовый лед</a></li>
+                    <li class="dropdown-navigation-item"><a class="dropdown-navigation-link" href="#">Мелорин</a></li>
+                  </ul>
+                </li>
                 <li class="site-navigation-item"><a class="site-navigation-link" href="#"><span class="link-text-wrapper">Доставка и оплата</span></a></li>
                 <li class="site-navigation-item"><a class="site-navigation-link" href="#"><span class="link-text-wrapper">О Компании</span></a></li>
               </ul>
@@ -32,7 +40,7 @@
                     <form class="form-search" action="https://echo.htmlacademy.ru" method="POST" name="search">
                       <label class="visually-hidden" for="search-field">Поиск по каталогу мороженого</label>
                       <input class="input-text" type="search" name="search" id="search-field" placeholder="Что ищем?">
-                      <button class="visually-hidden" type="submit" tabindex="-1">Искать</button>
+                      <button class="visually-hidden" type="submit">Искать</button>
                     </form>
                   </div>
                 </div>
@@ -71,7 +79,7 @@
                   <div class="dropdown cart-content">
                     <h2 class="visually-hidden">Товары в корзине</h2>
                     <table class="cart-dropdown">
-                      <tr class="visually-hidden">
+                      <tr class="visually-hidden modal-cart-row">
                         <th></th>
                         <th>Изображение товара</th>
                         <th>Название товара</th>
