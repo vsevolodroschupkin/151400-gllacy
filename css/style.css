@@ -815,7 +815,9 @@ input[type="radio"].visually-hidden {
 }
 
 .final-price {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: right;
   line-height: 18px;
   font-weight: 700;
