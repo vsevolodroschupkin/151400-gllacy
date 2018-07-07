@@ -785,7 +785,7 @@ input[type="radio"].visually-hidden {
 }
 
 .delete-cell {
-  padding-right: 9px;
+  padding-right: 8px;
 }
 
 .img-cell {
@@ -826,7 +826,8 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 12px;
   height: 12px;
-  background: url("../img/cross-small.svg") no-repeat 50% 50%;
+  background: url("../img/cross-small.svg") no-repeat top left;
+  background-size: 11px 11px;
   border: 0;
   background-color: transparent;
   cursor: pointer;
